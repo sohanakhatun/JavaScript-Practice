@@ -102,3 +102,4 @@ console.log(Array.isArray(null)); // false
 // Q9.
 console.log(typeof Date); // function
 // Date without new refers to the Date constructor function, so → "function"
+

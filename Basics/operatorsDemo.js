@@ -129,3 +129,77 @@ newUnaryPlus = -UnaryPlus
 console.log(typeof newUnaryPlus); // Number
 console.log(newUnaryPlus); // -22
 
+//chatgpt Questions
+// Q1.
+console.log(5 == "5");       // true
+console.log(5 === "5");      // false
+console.log(0 == false);     // true
+console.log(0 === false);    // false
+console.log(null == undefined); // true  because loose equality has a special rule: null and undefined are equal to each other and nothing else.
+console.log(null === undefined); // false
+
+// Q2.
+console.log(1 + "2" + 3); // 123
+console.log(1 + 2 + "3"); // 33 1 + 2 + "3" =>  1 + 2 → number + number → 3 (number) => 3 + "3" → number + string → "33"
+
+// Q3.
+console.log(4 > 2 > 1); // false => 4 > 2 -> true => true > 1 -> false (As true becomes 1 and 1>1 becomes false)
+
+// Q4.
+console.log(+"5" + 5); // 10 because +"5" returns 5 (unary plus) which is added to 5 making it 10
+console.log(+"5" - 2); // 3 because +"5" returns 5 (unary plus) which is subtracted from 2 making it 3
+console.log(-"5" + 2); // -3 because -"5" returns -5 (unary minus) which is added to 2 making it -3
+console.log(-"5" - 2); // -7 because -"5" returns -5 (unary minus) which is subtracted from 2 making it -7
+
+// Q5. 
+let a = "10";
+let b = "5";
+console.log(a - b); // 5 because JavaScript performs arithmetic operations on strings as numbers when possible
+console.log(a + b); // 105 because "+" concatenates strings instead of performing addition
+
+
+//  Q6.
+console.log(1 < 2 < 3); // true
+console.log(3 > 2 > 1); // false
+
+// Q7
+console.log("2" * "3"); // 6
+console.log("10" / "2"); // 5
+console.log("5" - "2" + "1"); // 31
+
+// Q8.
+console.log(0 || 2 && 3 || 4); // 3 - 0 || 2 => true && 3 => true || 4 => true as for || if 1st operand is true then it wont check the next operand and return the first operand.
+
+// Q9.
+console.log(1 + true == 2 && "5" + 1 == 51 || 0); // true.
+// 1 turns to true and true + true = true 
+//  true == 2 => true
+//  true && "5" + 1 ==> true && 51 ==> true
+//  true == 51 => 51
+// 51 == 51 => true 
+//  true || 0 ==> true (final ans)
+
+//  Q10.
+console.log(+null + true * false || "0" && 1); // Output: 1
+//  +null = 0;
+//  0 + true * false = 0 + 1 * 0 = 0 + 0 = 0;
+// 0 || "0" && 1 = 0 || true && 1 = 0 && 1 = 1;
+
+// Q11.
+console.log(0 == "0" < 1 && false == 0 || "5" - 2 === "3"); // false
+// 0 == "0" => true
+// true < 1 => false
+// false && false ==> false 
+// false == 0 ==> true
+// true || "5" - 2 ==> true || 3 ==> true
+// true === "3" ==> false 
+
+// Q12.
+console.log(!!"0" == false || NaN == NaN && +"10" / -"2"); // false
+
+// !!"0" => true
+//  true == false => false
+// false || NaN == NaN ==> false || false ==> false
+// false && +"10" / -"2" ==> false && 10/-2 ==> false && -5 ==> false
+
+
