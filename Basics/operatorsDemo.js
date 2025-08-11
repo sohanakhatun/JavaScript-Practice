@@ -202,4 +202,8 @@ console.log(!!"0" == false || NaN == NaN && +"10" / -"2"); // false
 // false || NaN == NaN ==> false || false ==> false
 // false && +"10" / -"2" ==> false && 10/-2 ==> false && -5 ==> false
 
+// Q13. Check this after reading coercion rules properly..
+console.log([] + [] == "");
+console.log([] == ![]);
+
 
