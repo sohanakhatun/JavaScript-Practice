@@ -312,7 +312,7 @@ let value18 = (
     ? "Cat"
     : "Dog";
 
-    console.log(value18); // Cat
+console.log(value18); // Cat
 
 //      (
 //     ("P" && (false || "Q"))
