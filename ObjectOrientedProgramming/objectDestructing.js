@@ -544,3 +544,16 @@ const {
 console.log(name); // Sohana
 console.log(city); // Cannot read properties of null 
 console.log(theme);
+
+const arr = [1,2,3];
+const obj = {...arr};
+// const obj = { 0: 1 , 1: 2 , 2: 3} Index becomes the Keys
+
+const obj = { 0: 1 , 1: 2 , 2: 3} ;
+const arr = [...obj];
+console.log(arr); // This will throw error : "obj is not iterable"
+
+// Alternative solution to this:
+const arr = [...Object.entries(obj)];
+console.log(arr); // [['0',1] , ['1',2] , ['2',3]]
+
