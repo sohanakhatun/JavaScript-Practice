@@ -234,7 +234,8 @@ function Three() {
   this.c = 3;
 }
 
-let obj9 = new new new One()();
+let obj9 = new new new One()(); //  Three 
 console.log(obj9.a, obj9.b, obj9.c);
 
-// let obj9 = new Three; undefined , undefined , 3
+// let obj9 = new Three; 
+// undefined , undefined , 3
